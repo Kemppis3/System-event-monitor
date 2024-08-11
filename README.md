@@ -41,11 +41,7 @@ Password for the host is required in this step. After this, a connection can be 
 ## Daemon usage
 
 ``` bash
-make
-```
-
-``` bash
-make clean
+make && make clean
 ```
 
 ``` bash
