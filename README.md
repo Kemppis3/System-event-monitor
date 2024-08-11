@@ -6,7 +6,7 @@ Purpose of this project was to learn about system's programming, code a small Li
 
 ![Setup Diagram](./pictures/setup_diagram.jpg)
 
-Deamon (watcher) runs on the backround on the VM, monitoring the set directory/file. After monitoring is stopped with a shutdown signal, the program connects to the host machine via SSH, and sends the log file file to desired host machine directory.
+Deamon (watcher) runs on the backround on the VM, monitoring the set target. After monitoring is stopped with a signal, the program connects to the host machine via SSH, and sends the log file to desired host machine directory.
 
 ## Preperations
 
