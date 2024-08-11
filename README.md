@@ -4,4 +4,4 @@ Project for creating a system, which's events are monitored for changes in watch
 
 Purpose of this project was to practive system's programming, code a small Daemon for logging desired System events, and send the logged events to another host with SSH.
 
-![Setup Diagram] (./pictures/setup_diagram.jpg)
+![Setup Diagram](./pictures/setup_diagram.jpg)
