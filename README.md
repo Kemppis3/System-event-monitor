@@ -16,6 +16,7 @@ Check SSH status with
 ``` bash
 sudo systemctl status ssh
 ```
+
 If SSH is disabled
 ``` bash
 sudo systemctl enable ssh
@@ -23,6 +24,13 @@ sudo systemctl enable ssh
 ``` bash
 sudo systemctl start ssh
 ```
+
+A keypair needs to be created so that VM can connect without the password.
+Example
+``` bash
+ssh-keygen -b 2048 -t rsa
+```
+Use of best practices when creating and using SSH keys is adviced.
 
 ``` bash
 make
