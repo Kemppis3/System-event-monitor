@@ -4,7 +4,7 @@ CFLAGS = -Wall -g $(shell pkg-config --cflags glib-2.0 libnotify)
 
 LDFLAGS = $(shell pkg-config --libs glib-2.0 libnotify)
 
-TARGET = watcher
+TARGET = watcherd
 
 SRCS = watcher.c
 
