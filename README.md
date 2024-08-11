@@ -12,10 +12,5 @@ Deamon (watcher) runs on the backround on the VM, monitoring the set directory/f
 For directory
 
 ``` bash
-./watcher /path/to/directory
+./watcher [/path/to/file]
 ```
-For file
-``` bash
-./watcher /path/to/file
-```
-
