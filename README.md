@@ -47,5 +47,5 @@ make && make clean
 ``` bash
 ./watcher [/path/to/target]
 ```
-The Daemon starts monitoring the set target, and logging the events to a logfile. Also Linux system notifications are also displayed after each event for clarity.
+The Daemon starts monitoring the set target, and logging the events to a logfile. Also Linux system notifications are displayed after each event for clarity.
 Monitoring can be stopped with a signal (Ctrl + C), and then the program will connect to the host machine and send the logging file to the set destination directory. Note that the connected user should have writing permissions for the destination folder.
