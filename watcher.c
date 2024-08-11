@@ -1,4 +1,4 @@
-//Thanks for https://github.com/hoff-dot-world giving inspiration for this project. Core of this project was made using his tutorial on YouTube: https://www.youtube.com/watch?v=9nDYYc_7sKs
+//Thanks for https://github.com/hoff-dot-world giving inspiration for this project. Core of this project was made using his tutorial on YouTube: https://www.youtube.com/watch?v=9nDYYc_7sKs, which I built the rest upon.
 
 #include <stdio.h>
 #include <stdlib.h>
