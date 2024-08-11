@@ -1,8 +1,8 @@
 # System event monitor
 
-Project for creating a system, which's events are monitored for changes in watched files and directories. 
+A Linux Daemon for monitoring target file's / directory's events, and sending monitoring information to a external server.
 
-Purpose of this project was to practive system's programming, code a small Daemon for logging desired System events, and send the logged events to another host with SSH.
+Purpose of this project was to learn about system's programming, code a small Linux Daemon for logging desired System events, and send the monitored information to a external server (host) via SSH.
 
 ![Setup Diagram](./pictures/setup_diagram.jpg)
 
