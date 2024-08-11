@@ -9,6 +9,13 @@ Purpose of this project was to practive system's programming, code a small Daemo
 Deamon (watcher) runs on the backround on the VM, monitoring the set directory/file. After monitoring is stopped with a shutdown signal, the program connects to the host machine via SSH, and sends the log file file to desired host machine directory.
 
 ## Usage
+For directory
 
 ``` bash
 ./watcher /path/to/directory
+```
+For file
+``` bash
+./watcher /path/to/file
+```
+
