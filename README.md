@@ -8,14 +8,14 @@ The benefits of this are that we learn the possible directories and files the at
 
 ![Setup Diagram](./pictures/setup_diagram.png)
 
-Deamon (watcher) runs on the backround on the VM, monitoring the set target. After monitoring is stopped with a signal, the program connects to the host machine via SSH, and sends the log file to desired host machine directory.
+Deamon (watcher) runs on the backround on the VM, monitoring the set target(s). After monitoring is stopped with a signal, the program connects to the external server via SSH, and sends the logfile to desired directory on the server.
 TODO: Change so that the daemon send the logs in time cycles to aws server? or host machine. AWS maybe be better if the attacker gets the ssh details, the host machine could get compromised. honey pot VM needs strong authentication and permissions need to be in check to avoid unauthenticated reading of ssh details.
 
 ## Preperations
 
-SSH connection from the VM to the host machine needs to established first. SSH needs to enabled for host and the VM.
+SSH connection from the VM to the server needs to be established first. When creating a AWS server, a keypair is usually generated.
 
-Check SSH status with
+Check SSH status on VM with
 ``` bash
 sudo systemctl status ssh
 ```
@@ -27,11 +27,13 @@ sudo systemctl enable ssh
 ``` bash
 sudo systemctl start ssh
 ```
-
-A keypair needs to be created so that VM can connect without the password.
-Example
+The created SSH key needs to be delivered to the VM for establishing SSH connection later on without password authentication.
+The key should be added to the ssh directory and only the user should have full read-write permission to it. This is very important so that the SSH details don't get compromised when opening the VM for outside connections.
 ``` bash
-ssh-keygen -b 2048 -t rsa
+/etc/ssh/created_key
+```
+``` bash
+sudo chmod 600 created_key
 ```
 Use of best practices when creating and using SSH keys is adviced.
 
