@@ -2,7 +2,7 @@
 
 A Linux Daemon for monitoring target file's / directory's events on a virtual machine with dummy data (honey pot), and sending monitoring information to a external server.
 
-Purpose of this project was to learn about system's programming, code a small Linux Daemon for logging desired System events, and send the monitored information to a external server (host) via SSH.
+Purpose of this project was to learn about system's programming, code a small Linux Daemon for logging desired System events, and send the monitored information to a external server via SSH.
 
 The benefits of this are that we learn the possible directories and files the attackers / attack scripts may try to access, and protect the actual servers with non dummy information better.
 
