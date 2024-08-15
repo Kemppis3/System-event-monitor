@@ -54,3 +54,7 @@ make && make clean
 ```
 The Daemon starts monitoring the set target, and logging the events to a logfile. Also Linux system notifications are displayed after each event for clarity. TODO: Maybe add a choice to remove the system notifications
 Monitoring can be stopped with a signal (Ctrl + C), and then the program will connect to the host machine and send the logging file to the set destination directory. Note that the connected user should have writing permissions for the destination folder.
+
+## Notes
+
+You should always be careful when dealing with honeypots and opening a VM to the outside world. The VM should contain only dummy data in real looking directories, which we want to monitor and protect on the actual server. Gathering information about attackers targets and attack surface is important for enhancing the security of the real servers.
