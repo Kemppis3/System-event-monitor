@@ -57,4 +57,4 @@ Monitoring can be stopped with a signal (Ctrl + C), and then the program will co
 
 ## Notes
 
-You should always be careful when dealing with honeypots and opening a VM to the outside world. The VM should contain only dummy data in real looking directories, which we want to monitor and protect on the actual server. Gathering information about attackers targets and attack surface is important for enhancing the security of the real servers.
+You should always be careful when dealing with honeypots and opening a VM to the outside world. The VM should contain only dummy data in real looking directories, which we want to monitor and protect on the actual server. Gathering information about attackers targets and attack surfaces is important for enhancing the security of the real servers.
