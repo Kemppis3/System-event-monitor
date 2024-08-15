@@ -6,7 +6,7 @@ Purpose of this project was to learn about system's programming, code a small Li
 
 The benefits of this are that we learn the possible directories and files the attackers / attack scripts may try to access, and protect the actual servers with non dummy information better.
 
-![Setup Diagram](./pictures/setup_diagram.jpg)
+![Setup Diagram](./pictures/setup_diagram.png)
 
 Deamon (watcher) runs on the backround on the VM, monitoring the set target. After monitoring is stopped with a signal, the program connects to the host machine via SSH, and sends the log file to desired host machine directory.
 TODO: Change so that the daemon send the logs in time cycles to aws server? or host machine. AWS maybe be better if the attacker gets the ssh details, the host machine could get compromised. honey pot VM needs strong authentication and permissions need to be in check to avoid unauthenticated reading of ssh details.
