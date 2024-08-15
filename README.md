@@ -37,11 +37,11 @@ sudo chmod 600 created_key
 ```
 Use of best practices when creating and using SSH keys is adviced.
 
-Public key can copied to the host machine
 ``` bash
-ssh-copy-id username@remote_host
+ssh -i /etc/ssh/created_key username@remotehost
 ```
-Password for the host is required in this step. After this, a connection can be established without entering the password every time.
+
+Now the VM should be able to connect to the external server without password authentication.
 
 ## Daemon usage
 
