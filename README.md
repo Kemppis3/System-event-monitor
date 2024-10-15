@@ -6,12 +6,12 @@ Purpose of this project was to learn about system's programming, code a small Li
 
 The benefits of this are that we learn the possible directories and files the attackers / attack scripts may try to access, and protect the actual servers with non dummy information better.
 
-NOTE! I just simulate honeypotting in this project and I don't recommend to do this on a poorly secured system. 
+NOTE! I just simulate honeypotting in this project and I don't recommend to do this on a poorly secured system. This is probably not the best way to do this, but this is a beginner project.
 
 ![Setup Diagram](./pictures/setup_diagram.png)
 
 Deamon (watcher) runs on the backround on the VM, monitoring the set target(s). After monitoring is stopped with a signal, the program connects to the external server via SSH, and sends the logfile to desired directory on the server.
-TODO: Change so that the daemon send the logs in time cycles to aws server? or host machine. AWS maybe be better if the attacker gets the ssh details, the host machine could get compromised. honey pot VM needs strong authentication and permissions need to be in check to avoid unauthenticated reading of ssh details.
+TODO: Change the daemon send the logs in time cycles to the server.
 
 ## Preperations
 
