@@ -6,7 +6,7 @@ Purpose of this project was to learn about system's programming, code a small Li
 
 The benefits of this are that we learn the possible directories and files the attackers / attack scripts may try to access, and protect the actual servers with non dummy information better.
 
-NOTE! I don't recommend you to do it this way
+NOTE! I just simulate honeypotting in this project and I don't recommend to do this on a poorly secured system. 
 
 ![Setup Diagram](./pictures/setup_diagram.png)
 
