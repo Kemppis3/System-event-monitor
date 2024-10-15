@@ -6,6 +6,8 @@ Purpose of this project was to learn about system's programming, code a small Li
 
 The benefits of this are that we learn the possible directories and files the attackers / attack scripts may try to access, and protect the actual servers with non dummy information better.
 
+NOTE! I don't recommend you to do it this way
+
 ![Setup Diagram](./pictures/setup_diagram.png)
 
 Deamon (watcher) runs on the backround on the VM, monitoring the set target(s). After monitoring is stopped with a signal, the program connects to the external server via SSH, and sends the logfile to desired directory on the server.
